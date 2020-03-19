@@ -1,6 +1,6 @@
 const rp = require('request-promise');
 
-rp('http://www.google.com')
+rp('http://www.walla.co.il')
 .then(function (htmlString) {
 console.log(htmlString +  " the result google")
 })
