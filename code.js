@@ -1,21 +1,21 @@
-const rp = require('request-promise');
+// const rp = require('request-promise');
 
-rp('http://www.walla.co.il')
-.then(function (htmlString) {
-console.log(htmlString +  " the result google")
-})
-.catch(function (err) {
-console.log(err +  " the result err ")
-});
+// rp('http://www.walla.co.il')
+// .then(function (htmlString) {
+// console.log(htmlString +  " the result google")
+// })
+// .catch(function (err) {
+// console.log(err +  " the result err ")
+// });
 
-var SDK = lpTag.agentSDK || {};
-$(function() {
-    SDK.init({
-        notificationCallback: getLogFunction('INFO', 'Notification received!'),
-        visitorFocusedCallback: getLogFunction('INFO', 'Visitor Focused received!'),
-        visitorBlurredCallback: getLogFunction('INFO', 'Visitor Blurred received!')
-    });
-});
+// var SDK = lpTag.agentSDK || {};
+// $(function() {
+//     SDK.init({
+//         notificationCallback: getLogFunction('INFO', 'Notification received!'),
+//         visitorFocusedCallback: getLogFunction('INFO', 'Visitor Focused received!'),
+//         visitorBlurredCallback: getLogFunction('INFO', 'Visitor Blurred received!')
+//     });
+// });
 
 var userSelections;
 
