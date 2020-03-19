@@ -12,7 +12,8 @@
 <body>
 
 	<script>
-		request-promise('http://www.google.com')
+		const rp = require('request-promise');
+		rp('http://www.google.com')
     .then(function (htmlString) {
         console.log(htmlString +  " the result google")
     })
