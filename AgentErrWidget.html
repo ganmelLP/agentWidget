@@ -12,9 +12,7 @@
 <body>
 
 	<script>
-		   var rp = require('request-promise');
-
-		rp('http://www.google.com')
+		request-promise('http://www.google.com')
     .then(function (htmlString) {
         console.log(htmlString +  " the result google")
     })
