@@ -8,14 +8,14 @@
 // console.log(err +  " the result err ")
 // });
 
-// var SDK = lpTag.agentSDK || {};
-// $(function() {
-//     SDK.init({
-//         notificationCallback: getLogFunction('INFO', 'Notification received!'),
-//         visitorFocusedCallback: getLogFunction('INFO', 'Visitor Focused received!'),
-//         visitorBlurredCallback: getLogFunction('INFO', 'Visitor Blurred received!')
-//     });
-// });
+var SDK = lpTag.agentSDK || {};
+$(function() {
+    SDK.init({
+        notificationCallback: getLogFunction('INFO', 'Notification received!'),
+        visitorFocusedCallback: getLogFunction('INFO', 'Visitor Focused received!'),
+        visitorBlurredCallback: getLogFunction('INFO', 'Visitor Blurred received!')
+    });
+});
 
 var userSelections;
 
