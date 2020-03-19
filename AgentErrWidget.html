@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>LivePerson SDK client example 1</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://lpcdn.lpsnmedia.net/webagent/client-SDK.min.js"></script>
+	<script src="js/code.js"></script>
+	<link rel="stylesheet" href="css/visuals.css" type="text/css">
+</head>
+<body>
+	<h1>User info task</h1>
+<!-- 	<div class="commandBox">
+		<input class="commandInput" type="text" name="commandInput" />
+		<button class="commandButton" onclick="writeCommand()" title="Write">Write</button>
+	</div> -->
+	<div class="getBox">
+		<input class="getInput" type="text" name="getInput" />
+		<button class="getButton" onclick="get()" title="Write">Get</button>
+		<div class="getResults"></div>
+	</div>
+<!-- 	<div class="bindBox">
+		<input class="bindInput" type="text" name="bindInput" />
+		<button class="bindButton" onclick="bind()" title="bind">Bind</button><button class="unbindButton" onclick="unbind()" title="bind">Unbind</button>
+		<div class="bindResults"></div>
+	</div>
+ -->
+
+	<div class="userId"></div>
+
+	<div>
+		<button class="userDevice" type="button" disabled></button>
+		<button class="userOS" type="button" disabled></button>
+	</div>
+
+	<select class="dropDown1">
+		  <option value="A">A</option>
+		  <option value="B">B</option>
+		  <option value="C">C</option>
+	</select>
+
+	<select class="dropDown2">
+		  <option value="A">A</option>
+		  <option value="B">B</option>
+		  <option value="C">C</option>
+	</select>
+
+	<select class="dropDown3">
+		  <option value="A">A</option>
+		  <option value="B">B</option>
+		  <option value="C">C</option>
+	</select>
+
+	<br>
+
+	<button class="submit" onclick="selection()">Submit Selection</button>
+
+	<div class="agentChoice">
+		
+	</div>
+
+<!-- 	<div class="commandBox">
+		<input class="commandInput" type="text" name="commandInput" />
+		<button class="commandButton" onclick="writeCommand()" title="Write">Write</button>
+	</div>
+	<div class="getBox">
+		<input class="getInput" type="text" name="getInput" />
+		<button class="getButton" onclick="get()" title="Write">Get</button>
+		<div class="getResults"></div>
+	</div>
+	<div class="bindBox">
+		<input class="bindInput" type="text" name="bindInput" />
+		<button class="bindButton" onclick="bind()" title="bind">Bind</button><button class="unbindButton" onclick="unbind()" title="bind">Unbind</button>
+		<div class="bindResults"></div>
+	</div>
+	<div class="logBox">
+		<textarea disabled></textarea>
+	</div> -->
+	<br>
+<!-- 	<div class="logBox">
+		<textarea disabled></textarea>
+	</div>
+ -->
+	<script> 
+
+		window.onload = function () {
+			if(lpTag.agentSDK){
+				bindUser();
+
+			}	
+		}
+
+	</script>
+
+</body>
+</html>
