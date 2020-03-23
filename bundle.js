@@ -4,7 +4,7 @@
 
     var account = "2102246";
 
-    function getErrs(convId) {
+    module.exports = function getErrs(convId) {
       const URL = "http://localhost:3000/getErrors/" + convId + "/" + account;
 
       /**
@@ -12,7 +12,7 @@
        * conversationId: The ID of the conversation in which the command was called.
        */
 
-      console.info("CALLING API : " + URL);
+      console.log("CALLING API : " + URL);
 
       var options = {
         method: 'GET',
