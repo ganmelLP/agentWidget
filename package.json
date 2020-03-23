@@ -1,0 +1,26 @@
+{
+  "name": "agenterrorsserver",
+  "version": "1.0.0",
+  "description": "show errors for agents",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "start",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ganmelLP/agentWidget.git"
+  },
+  "author": "gan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ganmelLP/agentWidget/issues"
+  },
+  "homepage": "https://github.com/ganmelLP/agentWidget#readme"
+}

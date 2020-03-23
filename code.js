@@ -93,10 +93,10 @@ function processData(data) {
 // }
 
 //the below selects the element with class "getInput" and takes its 'value'
-function get() {
-    var getKey = $(".getInput").val();
-    SDK.get(getKey, getSuccess, getLogFunction('ERROR', 'Error in get!'));
-}
+// function get() {
+//     var getKey = $(".getInput").val();
+//     SDK.get(getKey, getSuccess, getLogFunction('ERROR', 'Error in get!'));
+// }
 function bind() {
     var bindKey = $(".bindInput").val();
     SDK.bind(bindKey, bindSuccess, createCallback('Bind'));
