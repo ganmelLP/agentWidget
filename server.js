@@ -7,7 +7,6 @@ const rp = require('request-promise');
 const app = express();
 
 require('dotenv').config()
-const app = express()
 const mavenKey = process.env.MAVENKEY;
 
 
@@ -61,7 +60,7 @@ const URL = "https://z1.context.liveperson.net/v1/account/"+ account +"/agentErr
         rp(options)
             .then(function (parsedBody) {
                 console.log(parsedBody)
-                res.status(200).send("ParsedBody: " + parsedBody);
+                res.status(200).send(parsedBody);
 
             })
             .catch(function (err) {
